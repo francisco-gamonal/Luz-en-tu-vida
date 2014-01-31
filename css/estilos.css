@@ -102,3 +102,20 @@ header aside small
 	color: white;
 	height: 110px;
 }
+
+#principal
+{
+	margin-top: 1em;
+}
+
+.flexslider
+{
+	border: 1px solid green;
+}
+
+.flexslider , .flexslider .slides li img
+{
+	width: 500px;
+	max-width: 100%;
+	/*border: 1px solid green;*/
+}
