@@ -1,72 +1,104 @@
 @font-face
 {
 	font-family: "Dejavusans";
-	src: url(../fonts/letras/dejavusans.eot);
-	src: url(../fonts/letras/dejavusans.eot?#iefix) format("embedded-opentype"),
-		 url(../fonts/letras/dejavusans.ttf) format("truetype"),
-		 url(../fonts/letras/dejavusans.svg) format("svg"),
-		 url(../fonts/letras/dejavusans.woff) format("woff");
+	src: url(../fonts/dejavusans.eot);
+	src: url(../fonts/dejavusans.eot?#iefix) format("embedded-opentype"),
+		 url(../fonts/dejavusans.ttf) format("truetype"),
+		 url(../fonts/dejavusans.svg) format("svg"),
+		 url(../fonts/dejavusans.woff) format("woff");
   	font-weight: normal;
     font-style: normal;
 }
 
 body
 {
-	background: #FEFEFE;
+	background: rgba(224, 247, 222, 0.18);
 	font-family: "Dejavusans", Tahoma;
 	font-size: 16px;
 	width: 100%;
 }
 
-header
-{	
-	width: 100%;
-}
-
-header aside
+footer
 {
-	height: 2em;	
-	line-height: 2em;
-	border-top: 2px solid green;	
-	padding: 0 0 0 8em;
+	background-color: #131313;
+	border-top: .15em solid #009022;
+	color: white;
+	margin-top: 1em;
+	text-align: left
 }
 
-#menu
+footer p
+{
+	padding: 1em 0 1em 1em;
+}
+
+footer p, header aside, #menu
 {
 	margin: 0 auto;
 	width: 80%;
 }
 
-#menu figure, #menu nav
-{
-	display: inline-block;
-	vertical-align: middle;
-	text-align: left;	
+header
+{	
+	border-top: 2px solid #009022;	
+	width: 100%;
 }
 
-#menu nav ul li
+header aside small
 {
-	display: inline-block;
-	vertical-align: middle;
-	list-style:none;
+	color: #009022;
+	font-size: .9em;
+	font-weight: lighter;
+	height: 2em;	
+	line-height: 2em;	
 }
 
-#menu nav ul li a
+#contenido
 {
-	text-decoration: none;
-}
-
-
-#menu_fondo
-{
-	height: 130px;
-	background: green;
-	color: white;
+	margin: 0 auto;
+	padding-left: 3em;
+	width: 75%;
 }
 
 #logo img
 {
 	margin: .3em auto;
-	width: 120px;
+	width: 100px;
 }
 
+#menu figure, #menu nav
+{
+	display: inline-block;
+	text-align: left;	
+	vertical-align: middle;
+	width: 20%;
+}
+
+#menu nav 
+{
+	text-align: right;
+	width: 79%;
+}
+
+#menu nav ul li
+{
+	display: inline-block;
+	list-style:none;
+	margin-left: 2em;
+	vertical-align: middle;
+}
+
+#menu nav ul li a
+{
+	color: green;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+#menu_fondo
+{
+	background: rgba(219, 247, 214, 1);
+	border-bottom: .15em solid #009022; /* #F2EA0D */
+	color: white;
+	height: 110px;
+}

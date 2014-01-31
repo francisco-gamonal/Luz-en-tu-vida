@@ -1,0 +1,27 @@
+/* Luz en Tu Vida - Centro de Rehabilitación de drogas. - http://luzentuvida.pe */
+
+/* TEAM */
+
+	Sponsor: Edgar BendezÃº Ayala
+	Contact: edgarldv [at] hotmail.com
+	From: Lima, PerÃº
+
+	Frontend: Francisco Gamonal
+	Contact: hfgamonalb [at] gmail.com
+	twitter: @hfgamonal
+	From: Lima, PerÃº
+
+/* THANKS */
+	
+	My famyli for their support
+
+	@jonmircha http://bextlan.com
+	@merojandola http://mejorando.la
+
+
+/* SITE */
+	Last update: 2014/01/30
+	Language: EspaÃ±ol
+	Standars: HTML5, CSS3, JavaScript, PHP
+	Components: Responsive Design, jQuery, MySQL
+	Software: SublimeText2, Chrome, Dev Tools
