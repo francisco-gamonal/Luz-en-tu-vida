@@ -55,9 +55,10 @@ header aside small
 
 #contenido
 {
-	margin: 0 auto;
+	margin: 9em auto 2em auto;
+	position: relative;
 	padding-left: 3em;
-	width: 75%;
+	width: 65%;
 }
 
 #logo img
@@ -95,12 +96,14 @@ header aside small
 	text-decoration: none;
 }
 
-#menu_fondo
+.menu_fondo
 {
-	background: rgba(219, 247, 214, 1);
+	background: rgba(219, 247, 214, 0.8);
 	border-bottom: .15em solid #009022; /* #F2EA0D */
 	color: white;
+	position: absolute;
 	height: 110px;
+	width: 100%;
 }
 
 #principal
@@ -110,12 +113,50 @@ header aside small
 
 .flexslider
 {
-	border: 1px solid green;
+	border: 0;
 }
 
 .flexslider , .flexslider .slides li img
 {
 	width: 500px;
 	max-width: 100%;
-	/*border: 1px solid green;*/
+}
+
+.flex-caption
+{
+	background: rgba(88, 83, 83, 0.78);
+	bottom: -1em;
+	/*color: #FFF;*/
+	height: 4em;
+	line-height: 4em;
+	position: absolute;
+	text-indent: 1em;
+	width: 500px;
+}
+
+.flex-caption a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.slides li div
+{
+	position: absolute;
+	top:82%;
+	margin-left: 34.8em;
+	color: white;
+	font-size: .8em;
+}
+
+.fijo
+{
+	position: fixed;
+	top: 0;
+	z-index: 5;
+}
+
+nav ul ul
+{
+	display: none;
 }
