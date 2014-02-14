@@ -14,9 +14,8 @@ $(window).load(function() {
       }
   });
 
-  // Aquí va el código jQuery de a continuación.
   $(document).ready(function() {
-    var menu = $('.menu_fondo');
+    var menu = $('.fondo');
     var menu_offset = menu.offset();
     // Comprobaremos el estado del menu
     // cada vez que se haga scroll en la página

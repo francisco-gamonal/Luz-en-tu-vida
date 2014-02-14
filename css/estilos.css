@@ -24,7 +24,7 @@ footer
 	border-top: .15em solid #009022;
 	color: white;
 	margin-top: 1em;
-	text-align: left
+	text-align: left;
 }
 
 footer p
@@ -64,7 +64,7 @@ header aside small
 #logo img
 {
 	margin: .3em auto;
-	width: 100px;
+	width: 100px; 
 }
 
 #menu figure, #menu nav
@@ -84,9 +84,7 @@ header aside small
 #menu nav ul li
 {
 	display: inline-block;
-	list-style:none;
-	margin-left: 2em;
-	vertical-align: middle;
+	position: relative;
 }
 
 #menu nav ul li a
@@ -96,24 +94,25 @@ header aside small
 	text-decoration: none;
 }
 
-.menu_fondo
+#menu nav ul li .submenu
 {
-	background: rgba(219, 247, 214, 0.8);
-	border-bottom: .15em solid #009022; /* #F2EA0D */
-	color: white;
 	position: absolute;
-	height: 110px;
-	width: 100%;
+	display: none;
+    text-align: justify;
+    text-indent: 1.5em;
+    font-size: 0.9em;
+    left: -3em;
 }
 
-#principal
+#menu nav ul li:hover .submenu
 {
-	margin-top: 1em;
+	display: block;
+	z-index: 5;
 }
 
 .flexslider
 {
-	border: 0;
+	border: 2px solid #21612B;
 }
 
 .flexslider , .flexslider .slides li img
@@ -140,6 +139,29 @@ header aside small
 	color: white;
 }
 
+.fondo
+{
+	background: rgba(219, 247, 214, 0.8);
+	border-bottom: .15em solid #009022; /* #F2EA0D */
+	color: white;
+	position: absolute;
+	height: 110px;
+	width: 100%;
+}
+
+.fondo_menu
+{
+	padding: 1em;
+}
+
+.fondo_submenu
+{
+	background: white;
+	width: 120px;
+	padding: 1em;
+	border-bottom: 2px solid black;
+}
+
 .slides li div
 {
 	position: absolute;
@@ -154,9 +176,4 @@ header aside small
 	position: fixed;
 	top: 0;
 	z-index: 5;
-}
-
-nav ul ul
-{
-	display: none;
 }
