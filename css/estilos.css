@@ -56,8 +56,8 @@ header aside small
 #contenido
 {
 	margin: 9em auto 2em auto;
-	position: relative;
 	padding-left: 3em;
+	position: relative;
 	width: 65%;
 }
 
@@ -85,6 +85,7 @@ header aside small
 {
 	display: inline-block;
 	position: relative;
+	vertical-align: middle;
 }
 
 #menu nav ul li a
@@ -96,12 +97,11 @@ header aside small
 
 #menu nav ul li .submenu
 {
-	position: absolute;
 	display: none;
-    text-align: justify;
-    text-indent: 1.5em;
+	position: absolute;
     font-size: 0.9em;
-    left: -3em;
+    left: -3.5em;
+    text-align: justify;
 }
 
 #menu nav ul li:hover .submenu
@@ -110,24 +110,54 @@ header aside small
 	z-index: 5;
 }
 
+.flecha_arriba:before
+{
+	border: solid transparent;
+	border-bottom-color: rgba(57, 82, 57, 1);
+	border-width: 7px;
+	bottom: 100%;
+	content: " ";
+	left: 47.5%;
+	margin-left: -7px;
+	pointer-events: none;
+	position: absolute;
+}
+
 .flexslider
 {
 	border: 2px solid #21612B;
 }
 
+.flexslider, #sugerencias
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 75%;
+}
+
+#sugerencias
+{
+	width: 24%;
+}
+
+#sugerencias figure img
+{
+	width: 300px;
+}
+
 .flexslider , .flexslider .slides li img
 {
-	width: 500px;
 	max-width: 100%;
+	width: 500px;
 }
 
 .flex-caption
 {
+	/*color: #FFF;*/
 	background: rgba(88, 83, 83, 0.78);
 	bottom: -1em;
-	/*color: #FFF;*/
 	height: 4em;
-	line-height: 4em;
+	line-height: 3em;
 	position: absolute;
 	text-indent: 1em;
 	width: 500px;
@@ -135,8 +165,8 @@ header aside small
 
 .flex-caption a
 {
-	text-decoration: none;
 	color: white;
+	text-decoration: none;
 }
 
 .fondo
@@ -144,8 +174,8 @@ header aside small
 	background: rgba(219, 247, 214, 0.8);
 	border-bottom: .15em solid #009022; /* #F2EA0D */
 	color: white;
-	position: absolute;
 	height: 110px;
+	position: absolute;
 	width: 100%;
 }
 
@@ -154,12 +184,26 @@ header aside small
 	padding: 1em;
 }
 
+.fondo_menu:hover > a:before
+{
+	border: 1px solid green;
+	content: "";
+	position: absolute;
+	top: 10px;
+	width: 15px;
+}
+
 .fondo_submenu
 {
-	background: white;
-	width: 120px;
+	background: rgba(219, 247, 214, 1);
+	border-bottom: .15em solid #009022;
 	padding: 1em;
-	border-bottom: 2px solid black;
+	width: 100px;
+}
+
+.fondo_submenu a
+{
+	margin-left: .75em;
 }
 
 .slides li div
@@ -169,6 +213,18 @@ header aside small
 	margin-left: 34.8em;
 	color: white;
 	font-size: .8em;
+}
+
+.submenu li:first-child div:first-child
+{
+	border-radius: 0.25em 0.25em 0 0;
+	border-top: 4px solid rgb(57, 82, 57);
+}
+
+.submenu li:last-child div:last-child
+{
+	border-bottom: 4px solid rgb(57, 82, 57);
+	border-radius:  0 0 0.25em 0.25em;
 }
 
 .fijo

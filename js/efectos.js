@@ -3,7 +3,7 @@ $(window).load(function() {
 	$('.flexslider').flexslider({
       animation: "fade",      
       pausePlay: true,
-      controlNav: false,
+      controlNav: true,
 
       start:function(slider){
           $(".slide-current-slide").text(slider.currentSlide+1);
